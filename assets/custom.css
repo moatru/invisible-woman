@@ -1,0 +1,25 @@
+/* CUSTOM NAV STYLES */
+header nav a{
+  font-family: 'Londrina Outline', cursive;
+  color:black;
+  font-size: 4rem;
+}
+
+nav a:hover{
+  color: #EAF2F8 ;
+}
+
+.bio {
+  width: 20rem;
+  padding: 3rem;
+}
+
+/* CUSTOM FOOTER STYLES */
+footer img{
+width: 5rem;
+}
+
+/* CUSTOM LANDING PAGE STYLES */
+a.landing img{
+  width:5rem;
+}
