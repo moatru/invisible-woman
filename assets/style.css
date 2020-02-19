@@ -53,6 +53,7 @@
     line-height: 1;
     margin-bottom: 0.8rem;
     font-family: 'Londrina Outline', cursive;
+    color: black;
   }
 
   h2  { font-size: 2.2rem;  }
@@ -320,7 +321,7 @@
     background-image: url('../images/adventure.jpg');
     background-size: cover;
     background-position: center;
-    min-height: 80vh;
+    min-height: 20vh;
   }
 
   .fixed {
@@ -366,6 +367,7 @@
     position: relative;
     /* you only need to use relative + absolute if you want to determine the exact aspect ratio of the container */
     transition: all 0.3s;
+    border-radius: 100%;
   }
 
   .hover-overlay:hover {

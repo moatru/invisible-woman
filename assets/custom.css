@@ -1,8 +1,26 @@
+/* TYPOGRAPHY STYLES */
+
+h2.home {
+  font-size:3rem;
+  text-transform: uppercase;
+}
+
+h2, h3 {
+  text-transform: uppercase;
+}
+
+p {
+  font-family: 'Exo 2', sans-serif;
+  font-weight: 200;
+  color: black;
+}
+
 /* CUSTOM NAV STYLES */
 header nav a{
   font-family: 'Londrina Outline', cursive;
   color:black;
   font-size: 4rem;
+  text-transform: uppercase;
 }
 
 nav a:hover{
@@ -22,4 +40,15 @@ width: 5rem;
 /* CUSTOM LANDING PAGE STYLES */
 a.landing img{
   width:5rem;
+}
+
+/* BIO PAGE BUTTON LINKS */
+
+a.biobutton{
+  padding: 3rem;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #FDEDEC;
+  margin-bottom: 2rem;
 }

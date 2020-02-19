@@ -1,10 +1,13 @@
 ---
 layout: headerNfooter
 title: Invisible Woman - About
+banner_image: /images/banner2.jpg
 ---
+<!-- TOP FIXED BANNER -->
+{% include banner.html %}
 
 <!-- BIO SECTION -->
-<section class="grid">
+<section class="grid padded">
   <!-- BIO PHOTO -->
   <div class="col-4">
     <img src="images/biocat.GIF" class="bio">
@@ -25,15 +28,18 @@ title: Invisible Woman - About
 
 <!-- CODE - ART ED - ARTIST -->
 <section class="grid">
-<div class="col-4 biobutton">
-  <h2><a href="#"> CODE </a></h2>
+<div class="col-4">
+  <h2><a href="#" class="biobutton"> CODE </a></h2>
 </div>
 
-<div class="col-4 biobutton">
-  <h2><a href="https://www.instagram.com/miniartcenter/"> ART ED</a></h2>
+<div class="col-4">
+  <h2><a href="https://www.instagram.com/miniartcenter/" class="biobutton"> ART ED</a></h2>
 </div>
 
-<div class="col-4 biobutton">
-<h2><a href="http://mollytrudeau.com/">ARTIST</a></h2>
+<div class="col-4">
+<h2><a href="http://mollytrudeau.com/" class="biobutton">ARTIST</a></h2>
  </div>
 </section>
+
+<!-- BOTTOM FIXED BANNER -->
+{% include banner.html %}
