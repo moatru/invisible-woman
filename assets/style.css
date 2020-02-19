@@ -41,7 +41,8 @@
   .tall-100 {  min-height: 100vh;  }
 
   .dark-bg      {  background-color: rgb(90, 90, 95);     }
-  .light-bg     {  background-color: #fff4ea;  }
+/* CURRENTLY USED FOR QnA */
+  .light-bg     {  background-color: #F4ECF7;  }
   .featured-bg  {  background-color: #ffdfc3;       }
 
   .light-text   { color: white; }
@@ -99,13 +100,14 @@
   /* Icons */
 
   .far {        /* default styles for font awesome icons */
-    font-size: 2rem;
+    font-size: 2.5rem;
     margin-bottom: 1rem;
+    color:black;
   }
 
   .featured-stat {     /* styles for our featured statistic icons  */
     font-size: 3rem;
-    color: #e67e22;
+    color: #F4ECF7;
     margin-bottom: 1rem;
     display: block;
   }
@@ -117,10 +119,12 @@
     margin: 2px;
   }
 
-  .quote-icon {  /* You can also change the fonts for these icons specifically */
+/* IF YOU WANT TO ADD A QUOTE BLOCK USE THIS - CURRENTLY  YOU DO NOT HAVE */
+/* You can also change the fonts for these icons specifically */
+  /* .quote-icon {
     font-size: 6rem;
     line-height: 1;
-  }
+  } */
 
   /* ---------------  Button Styles  --------- */
   /* We have created lots of different button styles, you probably don't need to have quite this many styles depending on your site */
@@ -129,21 +133,28 @@
   .button-solid,
   .button-inverted {
     text-decoration: none;
-    color: #e67e22;
+    color: #EAF2F8;
     border: 2px solid;
     padding: 0.6rem 2rem;
     margin-top: 1rem;
     display: inline-block;
     text-transform: uppercase;
-    font-size: 0.9rem;
+    font-size: 2rem;
     font-weight: 500;
+    font-family: 'Londrina Outline', cursive;
+    background-image: url("/images/source.gif");
+    background-size: cover;
+    /* background-image: url("https://gph.is/2cESK7X"); */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 
   .button:hover {
     color: rgb(60, 60, 60);
   }
 
-  .button.inverted {   /* this is for a button on a dark background */
+/* this is for a button on a dark background */
+  .button.inverted {
     border: 2px solid white;
     color: white;
   }
@@ -164,7 +175,8 @@
     border-color: rgb(60, 60, 60);
   }
 
-  .arrow { /* this is the arrow button */
+/* this is the arrow button */
+  .arrow {
     font-size: 1.5rem;
     display: inline-block;
     text-align: center;
@@ -185,8 +197,7 @@
     }
 
 
-  /* Headers and footers */
-
+  /* -------------  Headers and footers ------------- */
   header {
     padding: 2% 5%;
   }
@@ -205,7 +216,7 @@
     padding: 0.5rem;
   }
   nav a:hover {
-    color: #e67e22;
+    color: #EAF2F8;
   }
 
   header nav a.emphasis {
@@ -222,7 +233,6 @@
   }
 
   /* Dropdown Header */
-
   header li {
     list-style: none;
     display: inline-block;
@@ -248,7 +258,6 @@
   }
 
   /* Fixed Header Option */
-
   header.fixed {
     position: fixed;
     background-color: #f9ca24;
@@ -314,8 +323,7 @@
     font-size: 1.2rem;
   }
 
-  /* BANNERS */
-
+  /* -------------  BANNERS -------------  */
   .banner,
   .banner-with-header {
     background-image: url('../images/adventure.jpg');
@@ -328,32 +336,33 @@
     background-attachment: fixed;
   }
 
-  .banner-with-header {
+  /* .banner-with-header {
     padding-top: 6rem;
     min-height: 100vh;
-  }
+  } */
 
-  .absolute-header {
+  /* .absolute-header {
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     margin: 0;
     background: none;
-  }
+  } */
 
-  .bg-pencils {
+  /* .bg-pencils {
     background-image: url('../images/pencils.jpg');
     background-position: left;
-  }
+  } */
 
-  .bg-image {
+  /* .bg-image {
     background-image: url('../images/adventure.jpg');
     background-size: cover;
     background-position: center;
     min-height: 10rem;
-  }
-  /* Hover grid */
+  } */
+
+  /* ------------- Hover grid -------------  */
 
   .hover-container {
     background-size: cover;
@@ -387,9 +396,10 @@
     margin-bottom: 0;
   }
 
-  /* Blog Post Elements */
+  /* ------------- Blog Post Elements ------------- */
+  /* ------------- YOU DO NOT HAVE A BLOG ON THIS SITE -------------  */
   /* ---- Blog loop elements style 1 ------ */
-  .blog-loop .blog-item {
+  /* .blog-loop .blog-item {
     color: inherit;
     text-decoration: none;
     width: 100%;
@@ -405,32 +415,35 @@
   .blog-loop img,
   .post-body img {
       margin-bottom: 2vh;
-  }
+  } */
 
   /* ---- Blog loop elements style 2 ------ */
-  .blog-item-wide .bg-image {
+  /* .blog-item-wide .bg-image {
     padding-bottom: 30%;
-  }
+  } */
 
-  .text-bump { /* selects every second one and reverses it */
+/* selects every second one and reverses it */
+  /* .text-bump {
     margin-left: -2rem;
     background-color: rgb(240,240,245);
     margin-top: 2rem;
     margin-bottom: 2rem;
-  }
+  } */
 
-  .blog-item-wide:nth-child(odd) { /* selects every second one and reverses it */
+/* selects every second one and reverses it */
+  /* .blog-item-wide:nth-child(odd) {
     flex-direction: row-reverse;
-  }
+  } */
 
-  .blog-item-wide:nth-child(odd) .text-bump { /* selects every second one and reverses it */
+/* selects every second one and reverses it */
+  /* .blog-item-wide:nth-child(odd) .text-bump {
     margin-right: -2rem;
     margin-left: 0;
-  }
+  } */
 
 
   /* ---- Blog post pages ------ */
-  .post-body {
+  /* .post-body {
     padding-right: 3%;
   }
 
@@ -454,27 +467,28 @@
     border-radius: 3px;
     text-transform: uppercase;
     font-size: 0.8rem;
-  }
+  }*/
 
-  a.category:hover {
-    border-color: #1abc9c; /* featured color */
-    color: #1abc9c; /* featured color */
-  }
+/* featured color */
+  /* a.category:hover {
+    border-color: #1abc9c;
+    color: #1abc9c;
+  } */
 
-  .social-share nav [class*=fa] {
+  /* .social-share nav [class*=fa] {
     padding: 0 1em 0 0;
   }
 
   .social-share hr{
     margin: 3rem 0;
-  }
+  } */
 
-  /* ----- FORMS --------------------------- */
+  /* --------------------------- FORMS --------------------------- */
 
   input,
   textarea {
     border-style: solid;
-    border: 2px solid rgb(200, 200, 205);
+    border: 2px solid #EAF2F8;
     padding: 0.8em;
     display: block;
     width: 100%;
@@ -485,7 +499,7 @@
   input:focus,
   textarea:focus {
     outline: none;
-    border: 2px solid #e67e22;
+    border: 2px solid #EAF2F8;
     /* featured color */
   }
 
@@ -501,6 +515,20 @@
   form [class*=col-] {
     padding: 5px;
   }
+
+/* ----------- INPUT FIELDS FOR GET IN TOUCH ----------- */
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: pink;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: pink;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: pink;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: pink;
+}
 
   .email-signup input {
     width: 30%;
@@ -525,9 +553,9 @@
      }
    }
 
-  /* Testimomnials */
+  /* --------------------------- Testimomnials --------------------------- */
 
-  .card {
+  /* .card {
     padding: 2rem;
     background-color: white;
     border-radius: 5px;
@@ -548,9 +576,9 @@
 
   .card .company {
     margin-bottom: 2rem;
-  }
+  } */
 
-  /* clickable boxes */
+  /* --------------------------- clickable boxes ---------------------------*/
 
   .clickable-box {
     color: inherit;
@@ -584,21 +612,23 @@
 }
 
 
-/* Masonry Gallery */
+/* --------------------------- Masonry Gallery  ---------------------------  */
 
-.masonry { /* Masonry container */
+/* Masonry container */
+/* .masonry {
   column-count: 3;
   column-gap: 1rem;
-}
+} */
 
-.masonry .item { /* Masonry bricks or child elements */
+/* Masonry bricks or child elements */
+/* .masonry .item {
   background-color: #eee;
   display: inline-block;
   margin-bottom: 1rem;
   width: 100%;
-}
+} */
 
-@media(max-width:767px) {
+/* @media(max-width:767px) {
   .masonry {
     column-count: 2;
   }
@@ -608,11 +638,11 @@
   .masonry {
     column-count: 1;
   }
-}
+} */
 
-/* pricing cards  */
+/* --------------------------- pricing cards --------------------------- */
 
-.card.featured {
+/* .card.featured {
   border: 2px solid orange;
 }
 
@@ -629,9 +659,10 @@
 
 .card .button {
   margin-top:2rem;
-}
+} */
 
-/* Responsive video */
+/* --------------------------- Responsive video --------------------------- */
+/* YOU MIGHT WANT THIS LATER ON SO LEAVING IN! */
 .embed-container {
   position: relative;
   padding-bottom: 56.25%;
@@ -654,13 +685,14 @@
   height: 100%;
 }
 
-/* Accordian slides */
+/* --------------------------- Accordian slides --------------------------- */
+/* -------------- QUESTIONS & ANSWERS SECTION -------------- */
 
 .accordion dt a {
   padding: 0.25rem;
   margin: 0.25rem 0;
   display:block;
-  color: #e67e22;
+  color: black;
   position: relative;
   text-decoration: none;
 }
@@ -685,10 +717,13 @@
 
 /* NEED DANIELs HELP to stop auto popping back open, and make the thing twist */
 .accordion dt a::after {
-  content: "+";
+  content: ' :)';
+  transform: rotateZ(90deg);
+
 }
 .open::after {
-  transform: rotateZ(45deg);
+  transform: rotateZ(450deg);
+  content: ' :P';
 }
 
 /* This media query kicks into action at the gridlex sm breakpoint */
@@ -701,9 +736,9 @@
     display: block;
   }
 
-  .blog-item-wide .bg-image{
+  /* .blog-item-wide .bg-image{
     padding-bottom: 60%;
-  }
+  } */
 
   #body .text-bump {
     margin: -0.5rem;
