@@ -340,7 +340,6 @@
   /* -------------  BANNERS -------------  */
   .banner,
   .banner-with-header {
-    background-image: url('../images/adventure.jpg');
     background-size: cover;
     background-position: center;
     min-height: 20vh;
@@ -693,7 +692,7 @@
 }
 
 /* --------------------------- Accordian slides --------------------------- */
-/* -------------- QUESTIONS & ANSWERS SECTION -------------- */
+/* -------------- FAQs SECTION -------------- */
 
 .accordion dt a {
   padding: 0.25rem;
@@ -731,6 +730,19 @@
 .open::after {
   transform: rotateZ(450deg);
   content: ' :P';
+}
+
+/* keyframe */
+
+.dance:hover{
+  animation:  dance 5s infinite;
+  animation-timing-function:linear;
+}
+
+@keyframes dance{
+  0%   { transform: scale(1.59) rotate(0deg);}
+  50%  { transform: scale(.51) rotate(180deg);}
+  100% { transform: scale(1.59)rotate(360deg); }
 }
 
 /* ---------- MEDIA QUERIES ---------- */
@@ -772,6 +784,7 @@
 
 /* This media query kicks into action at the gridlex xs breakpoint */
 @media(max-width:576px) {
+
 section.work img:hover {
   transform: scale(0) translateX(0rem);
   box-shadow: 0 5px 10px rgba(0,0,0,0.5);
@@ -779,6 +792,10 @@ section.work img:hover {
   /* position: fixed; */
   z-index:0;
   padding: .2rem;
+}
+
+.banner {
+  min-height: 10vh;
 }
 
 } /* end media query */
