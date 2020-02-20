@@ -726,6 +726,15 @@
   content: ' :P';
 }
 
+/* ---------- MEDIA QUERIES ---------- */
+
+@media(max-width:974px){
+  header.media{
+    max-width:53rem;
+    margin:auto;
+  }
+}
+
 /* This media query kicks into action at the gridlex sm breakpoint */
 @media(max-width:768px) {
 
