@@ -1,7 +1,6 @@
 /* --------- TYPOGRAPHY STYLES --------- */
-
 h2.home {
-  font-size:3rem;
+  font-size: 3rem;
   text-transform: uppercase;
 }
 
@@ -12,6 +11,10 @@ h2, h3 {
   -webkit-text-fill-color: transparent;
 }
 
+h4.subtle-heading{
+  text-transform: uppercase;
+}
+
 p {
   font-family: 'Exo 2', sans-serif;
   font-weight: 200;
@@ -19,15 +22,14 @@ p {
 }
 
 /* UTILITES */
-.paddedbottom-0{
-  padding-bottom:0;
+.paddedbottom-0 {
+  padding-bottom: 0;
 }
 
-
 /* CUSTOM NAV STYLES */
-header nav a{
+header nav a {
   font-family: 'Londrina Outline', cursive;
-  color:black;
+  color: black;
   font-size: 4rem;
   text-transform: uppercase;
   background-image: url("/images/source.gif");
@@ -41,18 +43,17 @@ header nav a{
 }
 
 /* CUSTOM FOOTER STYLES */
-footer img{
-width: 5rem;
+footer img {
+  width: 5rem;
 }
 
 /* CUSTOM LANDING PAGE STYLES */
-a.landing img{
-  width:5rem;
+a.landing img {
+  width: 5rem;
 }
 
 /* BIO PAGE BUTTON LINKS */
-
-.biobutton{
+.biobutton {
   padding: 4.6rem 2rem;
   text-align: center;
   text-transform: uppercase;
@@ -63,10 +64,10 @@ a.landing img{
   background-color: #F4ECF7;
   border-radius: 100%;
   min-width: 11.9rem;
-  transition:1s;
-
+  transition: 1s;
 }
-.biobutton h2{
+
+.biobutton h2 {
   background-image: url("/images/source.gif");
   background-size: cover;
   /* background-image: url("https://gph.is/2cESK7X"); */
@@ -74,6 +75,28 @@ a.landing img{
   -webkit-text-fill-color: transparent;
   font-size: 2.8rem;
 }
-.biobutton:hover{
+
+.biobutton:hover {
   background-color: #FDEDEC;
+}
+
+/* ------ PORTFOLIO ----- */
+section.work > div {
+  /* position: relative; */
+}
+
+section.work img {
+  transition: all 1s ease;
+  padding: .4rem;
+  background-image: url('../images/pastel.gif');
+  background-size: cover;
+}
+
+section.work img:hover {
+  transform: scale(2) translateX(5rem);
+  box-shadow: 0 5px 10px rgba(0,0,0,0.5);
+  position: relative;
+  /* position: fixed; */
+  z-index: 10;
+  padding: .2rem;
 }

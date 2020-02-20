@@ -1,41 +1,60 @@
 ---
 layout: headerNfooter
 title: Invisible Woman - Work
+banner_image: /images/banner2.jpg
+work:
+  - type: Event & Wedding Painter
+    client: Fontenot Fine Art
+    desc: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    image: /images/FontenotFineArt.jpg
+  - type: Children's Art Studio
+    client: Mini Art Center
+    desc: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    image: /images/miniartcenter.jpg
+  - type: Children's Art Studio
+    client: Mini Art Center
+    desc: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    image: /images/miniartcenter.jpg
+  - type: Children's Art Studio
+    client: Mini Art Center
+    desc: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    image: /images/miniartcenter.jpg
+
+
+
 ---
 
-<section class="padded centered">
-  <h2> Recent Work </h2>
-  <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-  <div class="grid padded-1">
-    <div class="col-4_sm-12 padded-1">
-      <div class="hover-container" style="background-image:url('images/MAC.jpg')">
-        <div class="hover-overlay">
-          <div class="hover-inner">
-            <h3> Mini Art Center </h3>
-            <p> a child's art studio located in New Orleans </p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="col-4_sm-12 padded-1">
-      <div class="hover-container" style="background-image:url('/images/person.png')">
-        <div class="hover-overlay">
-          <div class="hover-inner">
-            <h3> Suzie </h3>
-            <p> Developer </p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="col-4_sm-12 padded-1">
-      <div class="hover-container" style="background-image:url('/images/person.png')">
-        <div class="hover-overlay">
-          <div class="hover-inner">
-            <h3> Daniel </h3>
-            <p> Admin </p>
-          </div>
-        </div>
-      </div>
-    </div>
 
+<!-- TOP FIXED BANNER -->
+{% include banner.html %}
+
+<section class="padded work">
+  {% for project in page.work %}
+  <!-- WORK IMAGES -->
+  <div class="grid padded">
+    <div class="col-5_sm-12-middle">
+      <img src="{{ project.image }}">
+    </div>
+    <!-- CLIENT INFO -->
+    <div class="col-7_sm-12-middle padded">
+      <h4 class="subtle-heading"> {{ project.type }} </h4>
+      <h3> {{ project.client }} </h3>
+      <p> {{ project.desc }} </p>
+    </div>
+  </div>
+  {% endfor %}
+
+  <!-- COMING SOON :) -->
+  <!-- <div class="grid padded flex-flip">
+    <div class="col-7_sm-12-middle padded">
+      <h4 class="subtle-heading"> Hair Studio </h4>
+      <h3> Bandit Hair Company </h3>
+      <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+    </div>
+    <div class="col-5_sm-12 bg-image">
+    </div>
+  </div>-->
 </section>
+
+<!-- BOTTOM FIXED BANNER -->
+{% include banner.html %}
