@@ -116,11 +116,11 @@ section.work img:hover {
 }
 .curtain.slide-out.left {
   left: -50%;
-  opacity: 0;
+  opacity: 0.2;
 }
 .curtain.slide-out.right {
   right: -50%;
-  opacity: 0;
+  opacity: 0.4;
 }
 .curtain.left {
   left: 0;
