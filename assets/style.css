@@ -772,5 +772,13 @@
 
 /* This media query kicks into action at the gridlex xs breakpoint */
 @media(max-width:576px) {
+section.work img:hover {
+  transform: scale(0) translateX(0rem);
+  box-shadow: 0 5px 10px rgba(0,0,0,0.5);
+  position: relative;
+  /* position: fixed; */
+  z-index:0;
+  padding: .2rem;
+}
 
 } /* end media query */
