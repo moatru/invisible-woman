@@ -1,8 +1,34 @@
 ---
-layout: default
-title: Invisible Woman
+layout: headerNfooter
+title: Invisible Woman - Home
+banner_image: /images/banner2.jpg
 ---
 
-<a href="homepage.html" class="landing">
-  <img src="images/IW-logo.GIF">
-</a>
+<div class="curtain left"> </div>
+<div class="curtain right"> </div>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js">
+  </script>
+<script type="text/javascript">
+  $(document).ready(function() {
+
+      $(".curtain").addClass("slide-out");
+
+  });
+</script>
+
+<!-- TOP FIXED BANNER -->
+{% include banner.html %}
+
+<!-- HEADING + TEXT BLOCK -->
+<section class="grid">
+  <div class="col-4_sm-6_xs-12 padded">
+    <h2 class="home"> Custom Coded Web Designs </h2>
+  </div>
+  <div class="col-8_sm-6_xs-12 padded">
+    <p class="emphasis">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+    <p class="emphasis"> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  </div>
+</section>
+
+<!-- BOTTOM FIXED BANNER -->
+{% include banner.html %}

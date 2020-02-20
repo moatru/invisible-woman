@@ -44,7 +44,7 @@ header nav a {
 
 /* CUSTOM FOOTER STYLES */
 footer img {
-  width: 8rem;
+  width: 5rem;
 }
 
 /* CUSTOM LANDING PAGE STYLES */
@@ -88,7 +88,7 @@ section.work > div {
 section.work img {
   transition: all 1s ease;
   padding: .4rem;
-  background-image: url('../images/pastel.gif');
+  background-image: url('../images/lightglitter.gif');
   background-size: cover;
 }
 
@@ -99,4 +99,32 @@ section.work img:hover {
   /* position: fixed; */
   z-index: 10;
   padding: .2rem;
+}
+
+.curtain {
+  position: absolute;
+  top: 0;
+  bottom: 1rem;
+  background-image: url('../images/source.gif');
+  width: 50%;
+  z-index: 50;
+  transition: all 4s linear;
+  background-size: cover;
+  border-bottom-right-radius: 10%;
+  border-bottom-left-radius: 10%;
+  opacity: 1;
+}
+.curtain.slide-out.left {
+  left: -50%;
+  opacity: 0;
+}
+.curtain.slide-out.right {
+  right: -50%;
+  opacity: 0;
+}
+.curtain.left {
+  left: 0;
+}
+.curtain.right {
+  right: 0;
 }

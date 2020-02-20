@@ -490,9 +490,13 @@
   } */
 
   /* --------------------------- FORMS --------------------------- */
+form{
+  background-image: url('../images/lightglitter.gif');
+}
 
   input,
   textarea {
+    background-color: white;
     border-style: solid;
     border: 2px solid #EAF2F8;
     padding: 0.8em;
@@ -514,12 +518,28 @@
   }
 
   input[type="submit"] {
-    width: auto;
-    display: block;
+    width: 100%;
+      display: block;
+      background-color: white;
+      text-decoration: none;
+      color: #EAF2F8;
+      border: 2px solid;
+      padding: 1rem 1rem;
+      margin-top: 2px;
+      display: inline-block;
+      text-transform: uppercase;
+      font-size: 2rem;
+      font-weight: 500;
+      font-family: 'Londrina Outline', cursive;
+  }
+
+  input:hover[type="submit"] {
+    color:pink;
+    transition: all 1s;
   }
 
   form [class*=col-] {
-    padding: 5px;
+    padding: 2px;
   }
 
 /* ----------- INPUT FIELDS FOR GET IN TOUCH ----------- */
@@ -740,9 +760,9 @@
 }
 
 @keyframes dance{
-  0%   { transform: scale(1.59) rotate(0deg);}
+  0%   { transform: scale(.59) rotate(0deg);}
   50%  { transform: scale(.51) rotate(180deg);}
-  100% { transform: scale(1.59)rotate(360deg); }
+  100% { transform: scale(.59)rotate(360deg); }
 }
 
 /* ---------- MEDIA QUERIES ---------- */
