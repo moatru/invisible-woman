@@ -143,9 +143,8 @@
   /* ---------------  Button Styles  --------- */
   /* We have created lots of different button styles, you probably don't need to have quite this many styles depending on your site */
 
-  .button,
-  .button-solid,
-  .button-inverted {
+  .button
+ {
     text-decoration: none;
     color: #EAF2F8;
     border: 2px solid;
@@ -158,25 +157,24 @@
     font-family: 'Londrina Outline', cursive;
     background-image: url("/images/source.gif");
     background-size: cover;
-    /* background-image: url("https://gph.is/2cESK7X"); */
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
 
   .button:hover {
-    color: rgb(60, 60, 60);
+    color: pink;
   }
 
 /* this is for a button on a dark background */
-  .button.inverted {
+  /* .button.inverted {
     border: 2px solid white;
     color: white;
-  }
+  } */
 
-  .button.inverted:hover {
+  /* .button.inverted:hover {
     color: #e67e22;
     border-color: #e67e22;
-  }
+  } */
 
   .button-solid {
     background-color: #e67e22;

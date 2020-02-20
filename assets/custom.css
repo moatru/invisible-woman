@@ -105,7 +105,7 @@ section.work img:hover {
   position: absolute;
   top: 0;
   bottom: 1rem;
-  background-image: url('../images/lightglitter.gif');
+  background-image: url('../images/pastel.gif');
   width: 50%;
   z-index: 50;
   transition: all 4s linear;

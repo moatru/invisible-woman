@@ -11,6 +11,7 @@ work:
       veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
       commodo consequat.
     image: /images/FontenotFineArt.jpg
+    link: https://lavish-dahlia.cloudvent.net
   - type: Children's Art Studio
     client: Mini Art Center
     desc: >-
@@ -19,6 +20,7 @@ work:
       veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
       commodo consequat.
     image: /images/miniartcenter.jpg
+    link: http://www.miniartcenter.com/
   - type: Visual Artist
     client: Molly Trudeau
     desc: >-
@@ -27,6 +29,7 @@ work:
       ad minim       veniam, quis nostrud exercitation ullamco laboris nisi ut
       aliquip ex ea       commodo consequat.
     image: /images/mollytrudeau.jpg
+    link: http://mollytrudeau.com/
 ---
 
 <!-- TOP FIXED BANNER -->
@@ -44,6 +47,7 @@ work:
       <h4 class="subtle-heading"> {{ project.type }} </h4>
       <h3> {{ project.client }} </h3>
       <p> {{ project.desc }} </p>
+      <a class="button" href={{project.link}} target="_blank"> Check It </a>
     </div>
   </div>
   {% endfor %}
