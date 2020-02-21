@@ -35,7 +35,9 @@ work:
 <!-- TOP FIXED BANNER -->
 {% include banner.html %}
 
-<div class="centered">Recent Projects</div>
+<div class="centered">
+  <h2 class="centered padded-1">Recent Projects</h2>
+</div>
 
 <section class="padded work">
   {% for project in page.work %}
@@ -49,7 +51,7 @@ work:
       <h4 class="subtle-heading"> {{ project.type }} </h4>
       <h3> {{ project.client }} </h3>
       <p> {{ project.desc }} </p>
-      <a class="button" href={{project.link}} target="_blank"> Check It </a>
+      <a class="buttonwork" href={{project.link}} target="_blank"> Check It </a>
     </div>
   </div>
   {% endfor %}
