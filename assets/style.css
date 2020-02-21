@@ -725,7 +725,7 @@
   transform: rotateZ(90deg);
 
 }
-.open::after {
+.accordion dt .open::after {
   transform: rotateZ(450deg);
   content: ' :P';
 }

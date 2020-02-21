@@ -11,7 +11,9 @@ $(document).ready(function() {
 	});
 	// end hamburger menu
 console.log("bob")
-	// This is the pop-up gallery
+
+
+
 	var allPanels = $('.accordion > dd').hide();
 
 		$('.accordion > dt > a').click(function() {
@@ -20,7 +22,7 @@ console.log("bob")
 
 	    $(this).filter('.open').removeClass('open').addClass('closing')
 	    $('.accordion > dt > a').removeClass('open');
-	  $(this).not(".closing").addClass('open').parent().next().slideDown();
+	  	$(this).not(".closing").addClass('open').parent().next().slideDown();
 	    $('.accordion > dt > a').removeClass('closing');
 
 	    return false;
