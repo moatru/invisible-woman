@@ -740,9 +740,9 @@
 }
 
 @keyframes dance{
-  0%   { transform: scale(.59) rotate(0deg);}
-  50%  { transform: scale(.51) rotate(180deg);}
-  100% { transform: scale(.59)rotate(360deg); }
+  0%   { transform: scale(.59);}
+  50%  { transform: scale(.51);}
+  100% { transform: scale(.59);}
 }
 
 /* ---------- MEDIA QUERIES ---------- */
