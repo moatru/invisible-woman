@@ -128,3 +128,8 @@ section.work img:hover {
 .curtain.right {
   right: 0;
 }
+
+@media(max-width:700px){
+  .curtain {
+    display: none;}
+}

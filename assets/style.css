@@ -143,19 +143,17 @@
   /* ---------------  Button Styles  --------- */
   /* We have created lots of different button styles, you probably don't need to have quite this many styles depending on your site */
 
-  .button
- {
+  .button {
     text-decoration: none;
     color: #EAF2F8;
     border: 2px solid;
-    padding: 0.6rem 2rem;
     margin-top: 1rem;
     display: inline-block;
     text-transform: uppercase;
     font-size: 2rem;
     font-weight: 500;
     font-family: 'Londrina Outline', cursive;
-    background-image: url("/images/source.gif");
+    background-image: url("/images/lightglitter.gif");
     background-size: cover;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
