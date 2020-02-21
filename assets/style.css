@@ -159,6 +159,22 @@
     -webkit-text-fill-color: transparent;
   }
 
+  .buttonwork{
+    text-decoration: none;
+    color: #EAF2F8;
+    border: 2px solid;
+    margin-top: 1rem;
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: 'Londrina Outline', cursive;
+    background-image: url("/images/lightglitter.gif");
+    background-size: cover;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
   .button:hover {
     color: pink;
   }
