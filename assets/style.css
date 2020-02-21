@@ -728,8 +728,6 @@
 .accordion dt .open::after {
   transform: rotateZ(450deg);
   content: ' :P';
-  animation:  dance 5s infinite;
-  animation-timing-function:linear;
 }
 
 /* keyframe */
