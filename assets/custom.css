@@ -40,7 +40,16 @@ header nav a {
 .bio {
   width: 20rem;
   padding: 3rem;
+  /* margin-top: -16rem;
+  position: relative;
+  z-index: -2; */
 }
+
+/* .catmeow{
+  margin-left: -10rem;
+  z-index: 2;
+  postion: relative;
+} */
 
 /* CUSTOM FOOTER STYLES */
 footer img {
@@ -81,8 +90,14 @@ a.landing img {
 }
 
 /* ------ PORTFOLIO ----- */
-section.work > div {
-  /* position: relative; */
+
+
+section.work {
+  margin-top: -6rem;
+}
+
+section.work .grid {
+  padding: 1rem;
 }
 
 section.work img {
@@ -93,7 +108,7 @@ section.work img {
 }
 
 section.work img:hover {
-  transform: scale(2) translateX(5rem);
+  transform: scale(1.5) translateX(5rem);
   box-shadow: 0 5px 10px rgba(0,0,0,0.5);
   position: relative;
   /* position: fixed; */
