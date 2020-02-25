@@ -164,4 +164,8 @@ section.work img:hover {
       font-size: 2rem;
     }
 
+  .mobile-hide {
+      display: none;
+    }
+
 }
